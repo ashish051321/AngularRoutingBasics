@@ -1,21 +1,38 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="mainNavigation bg-lightest-blue">
+  <div class="menuitem">Q-Bank</div>
+  <div class="menuitem">Quiz</div>
+  <div class="menuitem">Results</div>
+  <div class="menuitem">Settings</div>
+  <div class="cross" (click)="adjustNav()">x</div>
+</nav>
 
+<header class="mainHeader flex justify-between items-center">
+
+  <!-- <div class="navhook" (click)="bringOnNav()"> -->
+    <svg class="navhook ml2" (click)="bringOnNav()" height="20px" id="Layer_1" style="fill:#fff; enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="20px"
+      xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  <!-- </div> -->
+
+  <div class="pageTitle">Quiz Home</div>
+
+</header>
+
+Rest of the content of the website. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, minus hic. Labore,
+commodi rerum sunt nemo nisi sed officia, hic provident saepe nobis quidem nihil deserunt iusto. Incidunt quae alias odit
+vitae doloribus fugiat sunt aliquam! Qui dolores recusandae unde error voluptas rem libero itaque eligendi, perferendis quia!
+Voluptatibus libero, totam minus eligendi at vel amet sed autem iste vitae esse a quae corporis dolorum odit ea laudantium
+impedit tempore consequuntur blanditiis molestiae. Similique maiores eaque cumque pariatur velit quo, assumenda fugit iure
+sunt inventore soluta, dignissimos molestias iste libero eius repellat corrupti natus quae nostrum blanditiis deserunt quidem
+minus amet! Voluptas iusto nemo laboriosam ratione quibusdam. Laboriosam aliquam architecto exercitationem eveniet unde ab
+ratione, quas repellendus et eius? Veniam, dolore voluptate quas ipsum aliquid reiciendis consequatur a expedita. Earum vel
+mollitia odit facilis maxime dolore unde quidem alias? Debitis totam itaque sed, quia a delectus et in beatae harum dolore
+officia labore reiciendis explicabo sint molestias eveniet perspiciatis mollitia quas aperiam, ad, temporibus molestiae dolores
+vero earum. Quisquam corporis aspernatur esse hic dicta nobis cum rerum itaque, accusamus eaque reiciendis ipsa recusandae
+autem minus deserunt adipisci labore magni. Repellendus aliquam soluta corrupti explicabo aspernatur nam quas nisi consequatur
+nulla! Eum tempora omnis cum corrupti esse officia, ullam beatae labore perferendis maiores ab quasi cumque quaerat repellat
+id hic dolores veniam, iure dolor expedita dolorum atque? Nobis saepe temporibus quidem animi odit fuga, alias, iusto, quasi
+id et perferendis. Voluptas cupiditate sapiente nemo nisi quod molestias maiores illum consequuntur mollitia?
 <router-outlet></router-outlet>

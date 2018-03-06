@@ -1,0 +1,59 @@
+ .mainNavigation{
+        display:inline-block;
+        position: fixed;
+        top:20px;
+        padding: 10px 15px 10px 0px;
+        
+        // border-right:1px solid grey;
+        box-shadow: 5px 4px 8px 2px rgba(0,0,0,0.2);
+        transition: 0.1s;
+        div.menuitem{
+            font-size:1.2em;
+            letter-spacing: 3px;
+            font-family: garamond;
+            padding:5px;
+        }
+        &:hover{
+            box-shadow: 5px 4px 8px 3px rgba(0,0,0,0.4);
+            
+        }
+
+        div.cross{
+            width:18px;
+            height:18px;
+            // line-height:18px;
+            font-family:arial;
+            font-size: 0.9em;
+            padding-bottom:2px;
+            position: absolute;
+            top:5px;
+            right:5px;
+
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius:50%;
+            background-color: rgba(62, 172, 135,0.6);
+            color:black;
+            cursor:pointer;
+
+            &:hover{
+                background-color: rgba(62, 172, 135,0.9);
+            }
+        }
+    }
+
+    svg.navhook{
+    //   background-color: red;
+    cursor:pointer;
+    }
+
+    header.mainHeader{
+        height:40px;
+        line-height: 40px;
+        letter-spacing: 3px;
+        font-family:garamond;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: #4C89E8;
+        color:white;
+    }
