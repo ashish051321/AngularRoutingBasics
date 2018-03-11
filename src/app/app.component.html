@@ -1,26 +1,31 @@
 <nav class="mainNavigation white flex flex-column justify-around">
-    <a [routerLink]="['/home']"><div class="menuitem">Q-Bank</div></a>
-    <a [routerLink]="['/home']"><div class="menuitem">Quizes</div></a>
-    <a href="www.google.com"><div class="menuitem">Results</div></a>
-    <a href="www.google.com"><div class="menuitem">Settings</div></a>
-    
-  <!-- <div class="menuitem">Quiz</div>
-  <div class="menuitem">Results</div>
-  <div class="menuitem">Settings</div> -->
+  <div class="menuitem" (click)="adjustNav('home');">
+    Q-Bank
+  </div>
+  <div class="menuitem" (click)="adjustNav('quiz');">
+    Quizes
+  </div>
+  <div class="menuitem" (click)="adjustNav('results');">
+    Results
+  </div>
+  <div class="menuitem" (click)="adjustNav('settings');">
+    Settings
+  </div>
   <div class="cross" (click)="adjustNav()">x</div>
 </nav>
 
 <header class="mainHeader flex justify-between items-center">
 
-  <!-- <div class="navhook" (click)="bringOnNav()"> -->
-    <svg class="navhook ml2" (click)="bringOnNav()" height="20px" id="Layer_1" style="fill:#fff; enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="20px"
-      xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-      />
-    </svg>
-  <!-- </div> -->
+
+  <svg class="navhook ml2" (click)="bringOnNav()" height="20px" id="Layer_1" style="fill:#fff; enable-background:new 0 0 32 32;"
+    version="1.1" viewBox="0 0 32 32" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+    />
+  </svg>
+
 
   <div class="pageTitle">Quiz Home</div>
 
 </header>
+
 <router-outlet></router-outlet>
