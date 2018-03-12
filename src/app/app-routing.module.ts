@@ -6,7 +6,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 const routes: Routes = [
   { path: '', redirectTo: "welcome", pathMatch: "full" },
   { path: 'welcome', component: WelcomeComponent },
-  { path: "home", loadChildren: './managequestions/managequestions.module#ManagequestionsModule' },
+  { path: "questions", loadChildren: './managequestions/managequestions.module#ManagequestionsModule' },
   { path: '**', component: NotfoundComponent }, //always last
 ];
 

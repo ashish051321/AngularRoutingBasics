@@ -2,12 +2,32 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid black;
+    
+    min-width: 750px; 
+    
 }
 
 th, td {
     text-align: left;
     padding: 8px;
+    border-bottom: 1px solid black;
 }
 
+table tr:nth-child(even){
+    background-color:lightgrey;
+}
+
+table tr:nth-child(1){
+    background-color: #008CDB;
+    color: white;
+    letter-spacing: 3px;
+    font-family: garamond;
+    font-weight: lighter;
+    
+}
 tr:nth-child(even){background-color: #f2f2f2}
+
+// @media screen and (max-width: 750px) {
+
+// }
