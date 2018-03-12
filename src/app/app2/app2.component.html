@@ -1,9 +1,10 @@
 <div id="mySidenav" class="sidenav">
   <a [routerLink]="" class="closebtn" (click)="closeNav()">&times;</a>
-  <a [routerLink] = "" (click)="navigateTo();">Q-Bank</a>
-  <a [routerLink] = "" (click)="navigateToPart2();">Quiz Collection</a>
-  <a href="#">Results</a>
-  <a href="#">Settings</a>
+  <a [routerLink]="" (click)="navigateTo('home')">Home</a>
+  <a [routerLink]="" (click)="navigateTo('questions')">Q-Bank</a>
+  <a [routerLink]="" (click)="navigateTo('quizes')">Quiz Collection</a>
+  <a [routerLink]="" (click)="navigateTo('results')">Results</a>
+  <a [routerLink]="" (click)="navigateTo('settings')">Settings</a>
 </div>
 
 <!-- Use any element to open the sidenav -->

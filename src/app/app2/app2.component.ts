@@ -1,5 +1,8 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { NavigationEnd } from '@angular/router';
+import 'rxjs/add/operator/filter';
 
 @Component({
   selector: 'myAngularApp',
@@ -13,32 +16,27 @@ export class App2Component implements OnInit {
   currentTitle = "Home";
 
   ngOnInit() {
+    this.router.events.filter(e => e instanceof NavigationEnd).subscribe((e:any) => {
+      console.log(e);
+      this.currentTitle = e.url.substring(1,e.url.length).toUpperCase();
+    });
   }
 
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
   openNav() {
     this.el.nativeElement.querySelector("#mySidenav").style.width = "250px";
-    // this.el.nativeElement.querySelector("#main").style.marginLeft = "250px";
-    // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 
 
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
   closeNav() {
     this.el.nativeElement.querySelector("#mySidenav").style.width = "0";
-    // this.el.nativeElement.querySelector("#main").style.marginLeft = "0";
-    // document.body.style.backgroundColor = "white";
-
   }
 
 
-  navigateTo() {
+  navigateTo(to:string) {
     this.el.nativeElement.querySelector("#mySidenav").style.width = "0";
-    this.router.navigate(['questions']);
-  }
-
-  navigateToPart2(){
-    this.el.nativeElement.querySelector("#mySidenav").style.width = "0";
+    this.router.navigate([to]);
   }
 
 }
