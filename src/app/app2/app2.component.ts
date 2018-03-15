@@ -18,7 +18,7 @@ export class App2Component implements OnInit {
   ngOnInit() {
     this.router.events.filter(e => e instanceof NavigationEnd).subscribe((e:any) => {
       console.log(e);
-      this.currentTitle = e.url.substring(1,e.url.length).toUpperCase();
+      this.currentTitle = e.url.substring(1,e.url.length).toUpperCase() || "HOME";
     });
   }
 
@@ -38,5 +38,4 @@ export class App2Component implements OnInit {
     this.el.nativeElement.querySelector("#mySidenav").style.width = "0";
     this.router.navigate([to]);
   }
-
 }
